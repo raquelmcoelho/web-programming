@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Play Piano</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body>
+        <div id="actionBar">
+            <button type="button"><a href="index.html">Home</a></button>
+            <button type="button"><a href="page2.html">Campos Harmônicos</a></button>
+            <button type="button"><a href="myExtraResource.html">Meu Recurso Extra</a></button>
+            
+        </div>
+        <h1> Clique nas teclas e toque livremente </h1>
+
+        <div id="pianoButtons">
+            <button type="button" onClick="playMyTale('do');"><img src="images/rightTale.png"></button>
+            <button type="button" onClick="playMyTale('re');"><img src="images/middleTale.png"></button>
+            <button type="button" onClick="playMyTale('mi');"><img src="images/leftTale.png"></button>
+            <button type="button" onClick="playMyTale('fa');"><img src="images/rightTale.png"></button>
+            <button type="button" onClick="playMyTale('sol');"><img src="images/middleTale.png"></button>
+            <button type="button" onClick="playMyTale('la');"><img src="images/middleTale.png"></button>
+            <button type="button" onClick="playMyTale('si');"><img src="images/leftTale.png"></button>
+            
+            <audio id="do" src="audios/C.mp3" type="audio/mp3"></audio>
+            <audio id="re" src="audios/D.mp3" type="audio/mp3"></audio>
+            <audio id="mi" src="audios/E.mp3" type="audio/mp3"></audio>
+            <audio id="fa" src="audios/F.mp3" type="audio/mp3"></audio>
+            <audio id="sol" src="audios/G.mp3" type="audio/mp3"></audio>
+            <audio id="la" src="audios/A.mp3" type="audio/mp3"></audio>
+            <audio id="si" src="audios/B.mp3" type="audio/mp3"></audio>
+        </div>
+    </body>
+</html>
