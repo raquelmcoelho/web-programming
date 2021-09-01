@@ -1,0 +1,31 @@
+img {
+    width: 3em;
+    height: 5em;
+}
+
+img.logo {
+    width: 24em;
+    height: 27em;
+}
+
+img.longimage{
+    flex: false;
+    width: 50em;
+    height: 15em;
+}
+
+body {
+    background-color: #282828;
+    color: pink;
+    text-align: center;
+    align-content: center;
+    font-family: Robot, sans-serif;
+}
+
+tr:hover {background-color: #e770b291;}
+
+table, th, td {
+    align-self: center;
+    border: 1px solid pink;
+    border-collapse: collapse;
+}
