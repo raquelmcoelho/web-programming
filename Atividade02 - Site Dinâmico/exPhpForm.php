@@ -5,15 +5,6 @@
 </head>
 <body>  
 
-http://localhost/ex_form/
-
-exPhpForm.php?
-
-txNome=Carlos&
-rdSexo=mas&
-txEmail=hairon&txWebsite=www&txAreaComentario=++meu+coment&btnEnviar=Enviar
-
-
 <?PHP
 
 $nome = $_GET['txNome'];

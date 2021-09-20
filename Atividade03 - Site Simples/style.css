@@ -9,13 +9,13 @@ body{
     background-color: rgb(255, 221, 226);
 }
 
-button {
+button, #submitButton {
     text-decoration: none;
     margin: auto;
     background-color: black;
     margin: 0%;
     border-radius: 4px;
-
+    color: white;
 }
 
 img{
@@ -54,6 +54,12 @@ hr{
     color: rgb(255, 221, 226);
     background-color: rgb(255, 221, 226);
 }
+
+form{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
 #partiture{
     text-decoration: none;
     width: 1000px;
@@ -62,5 +68,10 @@ hr{
 
 #pianoButtons{
     border-radius: 4px;
-
 }
+
+#termos{
+    font-style: italic;
+    color: rgb(253, 68, 99);
+}
+
