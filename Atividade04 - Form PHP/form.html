@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Escala</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div id="actionBar">
+            <button type="button"><a href="index.html">Home</a></button>
+            <button type="button"><a href="page2.html">Escala</a></button>
+            <button type="button"><a href="myExtraResource.html">Meu Recurso Extra</a></button>
+            <button type="button"><a href="form.html">Formulário</a></button>
+        </div>
+
+        <hr>
+        <h1>Formulário</h1>
+        <br>
+        <br>
+
+        <form name="formClient" action="form.php" method="GET" onsubmit="return validateForm()" >
+            <fieldset>
+                <legend> Personalizar Dados </legend>
+
+                <!-- Nome do Usuário -->
+                <br>
+                <br>
+                <label for="nameUser">Nome:</label>
+                <input id="nameUser" name="nameUser" type="text">
+
+                <!-- Experiência com piano do Usuário -->
+                <br>
+                <br>
+                <label for="experiencia">Experiência : </label>
+                <select id="experiencia" name="experiencia">
+                    <option name="experienceUser" value="tem zero">Nunca toquei piano </option>
+                    <option name="experienceUser" value="começou sua">Acabei de começar a aprender piano </option>
+                    <option name="experienceUser" value="tem pouca">Toco piano há pouco tempo </option>
+                    <option name="experienceUser" value="tem muita">Toco piano há muito tempo </option>
+                </select>
+
+                
+                <!-- Termos de Uso -->
+                <br>
+                <br>
+                <input type="checkbox" name="termosChecked">Li e Aceito os <a id="termos" href="termos.html">Termos de Uso</a>
+                
+                <!-- Botão de enviar -->
+                <br><br><br>
+                <input id="submitButton" type="submit">
+                
+            </fieldset>
+        </form>
+        
+        <fieldset>
+            <legend>Personalizar Site</legend>
+            <br>
+            <br>
+            Cor do site:
+            <input type="radio" name="siteColor" onclick="changeColor('rgb(255, 221, 226)')" value="Rosa">Rosa
+            <input type="radio" name="siteColor" onclick="changeColor('rgb(255, 255, 102)')" value="Amarelo">Amarelo
+            <input type="radio" name="siteColor" onclick="changeColor('rgb(153, 204, 255)')" value="Azul">Azul
+            <input type="radio" name="siteColor" onclick="changeColor('rgb(153, 255, 153)')" value="Verde">Verde
+        </fieldset>
+
+    </body>
+</html>

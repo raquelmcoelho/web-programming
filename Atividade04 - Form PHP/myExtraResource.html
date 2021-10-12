@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>&#127929;</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body>
+        <div id="actionBar">
+            <button type="button"><a href="index.html">Home</a></button>
+            <button type="button"><a href="page2.html">Escala</a></button>
+            <button type="button"><a href="myExtraResource.html">Meu Recurso Extra</a></button>
+            <button type="button"><a href="form.html">Formulário</a></button>
+        </div>
+        <hr>
+        <h1>Piano Web - Recurso Extra</h1>
+        <hr>
+        <h3>Agora sua vez de praticar, toque em seu teclado web</h3>
+
+        <div id="pianoButtons">
+            <button type="button" onClick="playMyTale('do');"><img class="pianoTale" src="images/rightTale.png"></button>
+            <button type="button" onClick="playMyTale('re');"><img class="pianoTale" src="images/middleTale.png"></button>
+            <button type="button" onClick="playMyTale('mi');"><img class="pianoTale" src="images/leftTale.png"></button>
+            <button type="button" onClick="playMyTale('fa');"><img class="pianoTale" src="images/rightTale.png"></button>
+            <button type="button" onClick="playMyTale('sol');"><img class="pianoTale" src="images/middleTale.png"></button>
+            <button type="button" onClick="playMyTale('la');"><img class="pianoTale" src="images/middleTale.png"></button>
+            <button type="button" onClick="playMyTale('si');"><img class="pianoTale" src="images/leftTale.png"></button>
+            
+            <audio id="do" src="audios/C.mp3" type="audio/mp3"></audio>
+            <audio id="re" src="audios/D.mp3" type="audio/mp3"></audio>
+            <audio id="mi" src="audios/E.mp3" type="audio/mp3"></audio>
+            <audio id="fa" src="audios/F.mp3" type="audio/mp3"></audio>
+            <audio id="sol" src="audios/G.mp3" type="audio/mp3"></audio>
+            <audio id="la" src="audios/A.mp3" type="audio/mp3"></audio>
+            <audio id="si" src="audios/B.mp3" type="audio/mp3"></audio>
+        </div>
+    </body>
+</html>
