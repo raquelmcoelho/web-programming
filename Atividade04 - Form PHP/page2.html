@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Escala</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body>
+        <div id="actionBar">
+            <button type="button"><a href="index.html">Home</a></button>
+            <button type="button"><a href="page2.html">Escala</a></button>
+            <button type="button"><a href="myExtraResource.html">Meu Recurso Extra</a></button>
+            <button type="button"><a href="form.html">Formulário</a></button>
+        </div>
+
+        <hr>
+        <h1> Escala musical de dó</h1>
+        <hr>
+        <h2> Aumente o volume e passe o mouse por cima da partitura para ouvir as notas serem tocadas</h2>
+
+        <button type="button" onmouseenter="playMyTale('scale');"><img id="partiture" src="images/partiture.png"></button>
+        <audio id="scale" src="audios/scaleC.mp3" type="audio/mp3"></audio>
+    </body>
+</html>
