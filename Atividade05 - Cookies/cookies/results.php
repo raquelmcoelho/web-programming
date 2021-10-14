@@ -17,7 +17,6 @@
         }
 
         function checkAnswer($question){
-            // checar se a resposta dada é a certa
             if(validate($question) == $GLOBALS["answers"][$question]){
                 return "Acertou";
             } else { return "Errou"; }
