@@ -6,76 +6,81 @@
     </head>
     <body>
         <?php 
-        setcookie("p5", $_GET["p5"])
-        
-        $answers = array("p1"=> "A", "p2"=> "B", "p3"=> "C", "p4"=> "D", "p5"=> "B")
+        include "../lib.php";
 
-        function validate(key){}
-            if isset($_COOKIE[key]){
-                return key
-            } else { return "Inválido"}
+        setcookie("p5", $_GET["p5"]);
+
+        function validate($myAnswer){
+            if(isset($_COOKIE[$myAnswer])){ 
+                return $_COOKIE[$myAnswer];
+            } else { return "Inválido"; }
         }
 
-        function checkAnswer(question){
+        function checkAnswer($question){
             // checar se a resposta dada é a certa
-            if $_COOKIE[question] == $GLOBALS[$answers[question]]{
-                return "Acertou"
-            } else{ return "Errou" }
+            if(validate($question) == $GLOBALS["answers"][$question]){
+                return "Acertou";
+            } else { return "Errou"; }
         }
 
         function totalPoints(){
-            $total = 0
-            foreach ($answers as $key => $value){
-                if $answers[$value] == $_COOKIE[$value] {$total += 1}
+            $total = 0;
+            foreach($GLOBALS["answers"] as $key => $value){
+                if(validate($key) == $value) {
+                    $total += 1;
+                }
             }    
-            return $total
+            return $total;
         }
         ?>
-
+        
+        <!-- TABELA RESULTADOS -->
         <table>
             <tr>
                 <th>Pergunta</th>
-                <th>Resposta Correta</th>
                 <th>Sua Resposta</th>
+                <th>Resposta Correta</th>
                 <th>Resultado</th>
             </tr>
 
             <tr>
                 <td>1 - </td>
-                <td><?php echo $GLOBALS[validate('p1')]?></td>
-                <td>5 anos</td>
-                <td><?php echo $GLOBALS[checkAnswer("p1")] ?></td>
+                <td><?php echo $GLOBALS["p1"][validate("p1")]?></td>
+                <td><?php echo $GLOBALS["p1"][$GLOBALS["answers"]["p1"]]?></td>
+                <td><?php echo checkAnswer("p1")?></td>
             </tr>
 
             <tr>
                 <td>2 - </td>
-                <td><?php echo $GLOBALS[validate('p2')]?></td>
-                <td>12 quartos</td>
-                <td><?php echo $GLOBALS[checkAnswer("p2")] ?></td>
+                <td><?php echo $GLOBALS["p2"][validate("p2")]?></td>
+                <td><?php echo $GLOBALS["p2"][$GLOBALS["answers"]["p2"]]?></td>
+                <td><?php echo checkAnswer("p2") ?></td>
             </tr>
 
             <tr>
                 <td>3 - </td>
-                <td><?php echo $GLOBALS[validate('p3')]?></td>
-                <td>3 homens</td>
-                <td><?php echo $GLOBALS[checkAnswer("p3")] ?></td>
+                <td><?php echo $GLOBALS["p3"][validate("p3")]?></td>
+                <td><?php echo $GLOBALS["p3"][$GLOBALS["answers"]["p3"]]?></td>
+                <td><?php echo checkAnswer("p3") ?></td>
             </tr>
             
             <tr>
                 <td>4 - </td>
-                <td><?php echo $GLOBALS[validate('p4')]?></td>
-                <td>20 noves</td>
-                <td><?php echo $GLOBALS[checkAnswer("p4")] ?></td>
+                <td><?php echo $GLOBALS["p4"][validate("p4")]?></td>
+                <td><?php echo $GLOBALS["p4"][$GLOBALS["answers"]["p4"]]?></td>
+                <td><?php echo checkAnswer("p4") ?></td>
             </tr>
 
             <tr>
                 <td>5 - </td>
-                <td><?php echo $GLOBALS[validate('p5')]?></td>
-                <td>A própria ou o Cônjuge</td>
-                <td><?php echo $GLOBALS[checkAnswer("p5")] ?></td>
+                <td><?php echo $GLOBALS["p5"][validate("p5")]?></td>
+                <td><?php echo $GLOBALS["p5"][$GLOBALS["answers"]["p5"]]?></td>
+                <td><?php echo checkAnswer("p5"); ?></td>
             </tr>
-                <td><?php echo $GLOBALS[totalPoints()]?></td>
-            </tr
+                <td><?php echo totalPoints() . " respostas certas!"; ?></td>
+            </tr>
         </table>
+
+        <button><a href="../index.html">Voltar</a></button>
     </body>
 </html>
