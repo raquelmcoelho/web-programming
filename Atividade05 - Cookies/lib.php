@@ -1,15 +1,38 @@
 <?php
     session_start();
 
+    function save($key){
+        if($_GET["quizChoosen"] == "cookies"){
+            setcookie($key, $_GET[$key]);  
+        } 
+        else { 
+            $_SESSION[$key] = $_GET[$key];
+        }
+
+        echo "Sua sessão está assim agora => ";
+        echo print_r($_SESSION); 
+        echo "<br><br>  Seus cookies estão assim agora => " ;
+        echo print_r($_COOKIE);
+    }
+
+    function clear(){
+        session_destroy(); 
+        setcookie("p1", null, -1);
+        setcookie("p2", null, -1);
+        setcookie("p3", null, -1);
+        setcookie("p4", null, -1);
+        setcookie("p5", null, -1);
+    }
+
     $answers = array(
         "p1"=> "A", 
         "p2"=> "B", 
         "p3"=> "C", 
         "p4"=> "D", 
         "p5"=> "B"
-    );
+    ); 
 
-    $p1 = array(
+    $question1 = array(
         "Inválido" => "Inválido",
         "A" => "5 anos",
         "B" => "20 anos",
@@ -17,7 +40,7 @@
         "D" => "Já aconteceu, só que foi antes"
     );
 
-    $p2 = array(
+    $question2 = array(
         "Inválido" => "Inválido",
         "A" => "24 quartos",
         "B" => "12 quartos",
@@ -25,7 +48,7 @@
         "D" => "3/12"
     );
 
-    $p3 = array(
+    $question3 = array(
         "Inválido" => "Inválido",
         "A" => "60 homens",
         "B" => "2 homens",
@@ -33,7 +56,7 @@
         "D" => "1 homem com bastante fome"
     );
 
-    $p4 = array(
+    $question4 = array(
         "Inválido" => "Inválido",
         "A" => "10 números",
         "B" => "1 número",
@@ -41,7 +64,7 @@
         "D" => "20 números"
     );
 
-    $p5 = array(
+    $question5 = array(
         "Inválido" => "Inválido",
         "A" => "Avó",
         "B" => "Ela própria",
