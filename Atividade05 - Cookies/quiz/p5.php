@@ -12,7 +12,7 @@
         ?>
 
         <form method="GET" action="results.php">
-            <!-- <br><img src="../assets/p5.jpg"> -->
+            <br><img src="../assets/p5.jpg">
             <br><p>Se a filha de Tereza é a filha da mãe da minha filha o que eu sou de Tereza?</p>
             <br><input type="radio" name="p5" value="A" checked><?php echo $GLOBALS["question5"]["A"]?>
             <br><input type="radio" name="p5" value="B"><?php echo $GLOBALS["question5"]["B"]?>

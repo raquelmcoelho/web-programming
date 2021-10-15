@@ -8,10 +8,6 @@
     <body>
         <?php
             include "../lib.php";
-            echo "Sua sessão está assim agora => ";
-            print_r($_SESSION); 
-            echo "<br><br>  Seus cookies estão assim agora => " ;
-            print_r($_COOKIE);
         ?>
 
         <form method="GET" action="p2.php">

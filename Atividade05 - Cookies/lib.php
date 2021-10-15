@@ -9,10 +9,10 @@
             $_SESSION[$key] = $_GET[$key];
         }
 
-        echo "Sua sessão está assim agora => ";
-        echo print_r($_SESSION); 
-        echo "<br><br>  Seus cookies estão assim agora => " ;
-        echo print_r($_COOKIE);
+        // echo "Sua sessão está assim agora => ";
+        // echo print_r($_SESSION); 
+        // echo "<br><br>  Seus cookies estão assim agora => " ;
+        // echo print_r($_COOKIE);
     }
 
     function clear(){

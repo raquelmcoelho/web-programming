@@ -1,1 +1,51 @@
 
+*{
+    margin: 1000 auto;
+    text-align: center;
+    border-radius: 4;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body{
+    background-color: rgb(255, 221, 226);
+}
+
+button{
+    text-decoration: none;
+    margin: auto;
+    background-color: black;
+    margin: 0%;
+    border-radius: 4px;
+    color: white;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+th{
+    background-color: white;
+}
+
+table{
+    padding-top: 200px;
+    margin: auto;
+    border-radius: 30px;
+    
+}
+table, th, td{
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+
+hr{
+    color: "#ffffff";
+    background-color: "#ffffff";
+}
