@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <title>Index</title>
+    </head>
+    
+    <body>
+    <br>
+        <h1>FORMULÁRIO CONVIDADO</h1>
+        <form name="form" action="read.php" method="GET">
+
+            <br><br>
+            <label for="nome">Nome:</label>
+            <input id="nome" name="nome" type="text">
+
+            <br><br>
+            <label for="convidadoDeQuem">Você é convidado de quem?:</label>
+            <select id="convidadoDeQuem" name="qual">
+                <option name="conjuge" value="0">noiva</option>
+                <option name="conjuge" value="1">noivo</option>
+            </select>
+
+            <br><br>
+            <label for="mensagem">Mande um comentário de felicitações para os noivos:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="5" cols="50"></textarea>
+
+            <br>
+            <h3>escolha uma Imagem</h3>
+            <input type="radio" name="imagem" value="altar.jpg"><img src="assets/altar.jpg" width="384" height="216"><br>
+            <input type="radio" name="imagem" value="bolo.jpg"><img src="assets/bolo.jpg" width="384" height="216"><br>
+            <input type="radio" name="imagem" value="buque.jpg"><img src="assets/buque.jpg" width="384" height="216"><br>
+            <input type="radio" name="imagem" value="padre.jpg"><img src="assets/padre.jpg" width="384" height="216"><br>
+            <input type="radio" name="imagem" value="salao.jpg"><img src="assets/salao.jpg" width="384" height="216"><br>
+            <input type="radio" name="imagem" value="vestido.jpg"><img src="assets/vestido.jpg" width="384" height="216"><br>
+            <br>
+
+            <input id="submitButton" type="submit" value="Enviar">
+        </form>
+        <br>
+    </body>
+</html>
