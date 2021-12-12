@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa'; font-size: 22px;
+    color: #FFFFFF;
+}
+
+#background {    
+    position: fixed;
+    width: 100%;
+}
+
+#form {
+    position: fixed;
+    width: 421px;
+    height: 720px;
+    left: 0px;
+    top: 0px;
+
+    background: rgba(0, 0, 0, 0.44);
+}
+
+#logo {
+    position: absolute;
+    width: 226px;
+    left: 122px;
+    top: 100px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.input1 {
+    padding-left: 10px;
+    position: relative;
+    width: 263px;
+    height: 62px;
+    left: 72px;
+    top: 252px;
+    margin-top: 10px;
+    border: 0px;
+
+    background: rgba(196, 196, 196, 0.18);
+    border-radius: 5px;
+}
+
+.btn1 {
+    position: relative;
+    width: 129px;
+    height: 43px;
+    left: 72px;
+    top: 252px;
+    margin-top: 10px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-radius: 5px;
+    font-family: Comfortaa;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+.btn1:hover {
+    background-color: #FFFFFF;
+    color: #000;
+    transition: 0.5s;
+}
+
+.btn1:active {
+    background-color: #2a103f;
+    color: rgb(255, 255, 255);
+}
+
+::-webkit-input-placeholder {
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 10px;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.17);
+}
+
+
+
+
