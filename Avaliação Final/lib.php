@@ -1,16 +1,17 @@
 <?php 
     session_start();
-    $servername = "localhost";
-    $usernameSQL = "root";
-    $password = "";
-    $dbname = "pweb"; 
+    $servername = "sql312.epizy.com";
+    $usernameSQL = "epiz_29527179";
+    $password = "eGQyImq1k7sB"; 
+    $dbname = "epiz_29527179_usuarios";
     
     // Conecta ao Banco
-    $conn = new mysqli($servername, $usernameSQL, $password, $dbname, 3307);
+    $conn = new mysqli($servername, $usernameSQL, $password, $dbname, 3306);
 
     // Checa a conexão
     if ($conn->connect_error) {
-        die("Falha na conexão: " . $conn->connect_error);
+        echo "Falha na conexão: " . $conn->connect_error;
+        // die("Falha na conexão: " . $conn->connect_error);
     }
 
     // Checa a Base de Dados
